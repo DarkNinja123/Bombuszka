@@ -179,5 +179,4 @@ Plik z 1500 adresami proxy w formacie `host:port`, jeden na linię. Używany prz
 | AuthMe (`-pass`) | NIE | TAK | NIE |
 | Follow player (`-f`) | NIE | TAK | NIE |
 | Komendy runtime | NIE | NIE | TAK |
-| Kod źródłowy | NIE | NIE | TAK (`minecraft-stress-test/`) |
 | Protokół MC | automatyczny | automatyczny | 1.21.11 (konfigurowalny) |

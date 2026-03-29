@@ -146,18 +146,10 @@ Boty otrzymują proxy w systemie **round-robin** (bot 1 → proxy 1, bot 2 → p
 java -Dbot.ip=mc.example.com -Dbot.count=5 -jar Bombuszka.jar
 
 # Pełne uruchomienie z proxy SOCKS4
-java -Dbot.ip=ariamc.pro -Dbot.count=1500 -Dbot.login.delay.ms=10 \
+java -Dbot.ip=mc.example.com -Dbot.count=1500 -Dbot.login.delay.ms=10 \
      -Dbot.proxy.file=proxy.txt -Dbot.proxy.type=SOCKS4 \
      -Dbot.proxy.timeout.ms=5000 \
      -jar Bombuszka.jar
-```
-
-### Budowanie ze źródła
-
-```bash
-cd minecraft-stress-test
-mvn clean package
-cp target/minecraft-stress-test-*-jar-with-dependencies.jar ../Bombuszka.jar
 ```
 
 ---

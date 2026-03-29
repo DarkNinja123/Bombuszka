@@ -154,20 +154,6 @@ java -Dbot.ip=mc.example.com -Dbot.count=1500 -Dbot.login.delay.ms=10 \
 
 ---
 
-## Bombuszka2.jar — Slim JAR (nieużywalny samodzielnie)
-
-**Rozmiar:** 42 KB
-
-Odchudzony JAR bez zależności i bez atrybutu `Main-Class` w manifeście. Powstaje jako produkt uboczny procesu budowania Maven. **Nie nadaje się do uruchamiania** — nie posiada bibliotek Netty ani punktu wejścia. Można zignorować lub usunąć.
-
----
-
-## proxy.txt
-
-Plik z 1500 adresami proxy w formacie `host:port`, jeden na linię. Używany przez `Bombuszka.jar` (flaga `-Dbot.proxy.file=proxy.txt`) oraz przez `Bombka.jar` / `BombuszkaLepsza.jar` (flaga `-l proxy.txt`).
-
----
-
 ## Porównanie narzędzi
 
 | Cecha | Bombka.jar (v1) | BombuszkaLepsza.jar (v2) | Bombuszka.jar (custom) |

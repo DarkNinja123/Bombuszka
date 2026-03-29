@@ -7,7 +7,7 @@ Zestaw narzędzi do stress-testowania serwerów Minecraft. Zawiera kilka wariant
 ## Bombka.jar — Wersja oryginalna (v1)
 
 **Silnik:** MCProtocolLib (gotowa biblioteka protokołu Minecraft)
-**Rozmiar:** 24 MB | **Data:** 27 luty
+**Rozmiar:** 24 MB | **Data:** 29 marzec
 
 Podstawowa wersja narzędzia mc-bots. Łączy wiele botów jednocześnie z serwerem Minecraft używając gotowej biblioteki do obsługi protokołu. Obsługuje proxy (SOCKS4/SOCKS5), generowanie nicków, opóźnienia logowania i minimalne tryby połączeń.
 
@@ -48,7 +48,7 @@ java -jar Bombka.jar -s mc.example.com:25565 -c 50 -r -l proxy.txt -t SOCKS5
 ## BombuszkaLepsza.jar — Wersja rozszerzona (v2.0)
 
 **Silnik:** MCProtocolLib (fork z dodatkami)
-**Rozmiar:** 23 MB | **Data:** 2 marzec
+**Rozmiar:** 23 MB | **Data:** 29 marzec
 
 Ulepszona wersja Bombka.jar z trybem cichym (ograniczone spamowanie logów) i dwiema nowymi funkcjami niedostępnymi w v1.
 
@@ -78,7 +78,7 @@ java -jar BombuszkaLepsza.jar -s mc.example.com -c 100 -r -pass mojehaslo123
 ## Bombuszka.jar — Wersja niestandardowa z modułem Proxy
 
 **Silnik:** Netty (bezpośredni protokół TCP, bez MCProtocolLib)
-**Rozmiar:** ~4.5 MB | **Data:** aktualna (kompilowana lokalnie)
+**Rozmiar:** ~4.5 MB | **Data:** 29 marzec (kompilowana lokalnie)
 
 Zbudowana na bazie projektu `minecraft-stress-test` z otwartym kodem źródłowym w katalogu `minecraft-stress-test/`. Zamiast gotowej biblioteki używa **bezpośredniej implementacji protokołu Minecraft przez Netty** — daje to niższe zużycie pamięci i wyższą skalowalność przy dużej liczbie botów. Dodany moduł Proxy integruje obsługę SOCKS4, SOCKS5 i HTTP przez wbudowane handlery Netty z mechanizmem round-robin.
 
